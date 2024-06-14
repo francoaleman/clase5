@@ -1,0 +1,56 @@
+/*Reseteo de estilos del navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 8px 16px;
+    /*top/bottom: 8px - left/right: 16px*/
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    padding-bottom: 16px;
+}
+
+ul {
+    padding-left: 32px;
+}
+
+#formularios {
+    margin-bottom: 500px;
+}
+
+input,
+textarea {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 8px;
+    /* color: red;
+    background-color: aqua; */
+}
+
+.radio {
+    display: inline;
+}
+
+.mr {
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.selectores {
+    padding: 16px;
+    background-color: rgb(221, 217, 217);
+    width: 350px;
+    margin-bottom: 8px;
+}
+
+textarea {
+    resize: none;
+}

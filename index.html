@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalers</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clase 05</h1>
+    </header>
+    <main>
+        <section id="servidores">
+            <h2>¿Qué es el internet?</h2>
+            <p>
+                Es un conjunto de "computadoras" que pueden comunicarse entre sí.
+                <br>
+                Las "computadoras" que almacenan los archivos y permiten que otras computadoras pidan verlos se llaman
+                Servidores
+            </p>
+            <h3>Servidores</h3>
+            <p>Para trabajar(comunicarse) con servidores es necesario utilizar Lenguajes de Programación pensados
+                específicamente para ese fin. Los denominados Lenguajes de Programación back-end (PHP, Java,
+                Phyton, etc)</p>
+            <h3>HTML, CSS y JavaScript</h3>
+            <p>
+                HTML y CSS son Lenguajes que se utilizan para comunicarse con el usuario final.
+                <br>
+                JavaScript es un Lenguaje que se utiliza para interactuar con el usuario final.
+                <br>
+                HTML, CSS y JavaScript son Lenguajes del front-end
+            </p>
+        </section>
+        <section id="html">
+            <h2>Estructura de elemento HTML</h2>
+            <ul>
+                <li>
+                    Etiqueta de apertura - Nombre de la etiqueta entre el signo de menor y mayor
+                    <br>
+                    Permite agregar atributos al elemento HTML
+                </li>
+                <li>Contenido - Todo lo que se encuentra entre la etiqueta de apertura y la etiqueta de cierre</li>
+                <li>Etiqueta de cierre - Nombre de la etiqueta entre el signo de menor y mayor. Antes de la primera
+                    letra del nombre hay un /</li>
+            </ul>
+            <h3>Atributo HTML</h3>
+            <p>Herramienta que me permite distinguir etiquetas del mismo nombre. <br> Un atributo modifica las etiquetas
+                HTML</p>
+        </section>
+        <section id="formularios">
+            <h2>Formularios</h2>
+            <p>Herramienta que permite recopilar información</p>
+            <h3>Elementos necesarios para un formulario</h3>
+            <ul>
+                <li>atributo method (¿cómo va a viajar la información?) - El método de envío de formulario se puede
+                    elegir respondiendo la pregunta ¿La
+                    información que voy a mandar es sensible?. Como regla general, el método get sólo se usa en las
+                    barras de búsqueda</li>
+                <li>atributo action (¿qué va a pasar con esa información?) - El action contiene la ruta al archivo que
+                    va a usar los datos recopilados</li>
+                <li>elemento submit (¿cuándo se va a mandar la información?) - Puede ser una etiqueta button o un input
+                    con el atributo type="submit"</li>
+                <li>La etiqueta input permite agregar elementos de formulario. El atributo type de la etiqueta indica
+                    que tipo de elemento voy a agregar</li>
+            </ul>
+            <h4>Ejemplo</h4>
+            <form method="post" action="php/enviarElMail.php">
+                <!-- El contenido de la etiqueta form === mi formulario -->
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" required pattern="[a-zA-Z ]{2,50}" title="Juan Perez"
+                    placeholder="Juan Perez">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <h4>Seleccionar servicio</h4>
+                <div class="selectores">
+                    <div class="mr">
+                        <label for="crear_web">Crear Web:</label>
+                        <input type="radio" name="servicio" id="crear_web" class="radio">
+                    </div>
+                    <div class="mr">
+                        <label for="modificar_web">Modificar Web:</label>
+                        <input type="radio" name="servicio" id="modificar_web" class="radio">
+                    </div>
+                </div>
+
+                <label for="comentario">Comentario:</label>
+                <textarea name="comentario" id="comentario" cols="50" rows="10" maxlength="160" required></textarea>
+
+                <!-- <button type="submit">Enviar</button> -->
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <span>&copy; Nosotros</span>
+    </footer>
+</body>
+
+</html>
